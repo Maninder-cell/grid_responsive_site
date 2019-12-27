@@ -1,0 +1,116 @@
+body{
+    box-sizing: border-box;
+}
+#logo img{
+    height: 100%;
+}
+#logo{
+    height: 80px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#nav_bar{
+    margin-top: 10px;
+    background-color: rgb(245, 242, 239);
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content:space-between;
+}
+.first{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,70px);
+    padding: 0;
+    margin: 0;
+}
+h1{
+    justify-self: center;
+    margin: 0;
+    vertical-align: middle;
+    line-height: 60px;
+}
+.first li{
+    justify-self: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+.sec li{
+    justify-self: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+.sec{
+    justify-self: self-end;
+    grid-template-columns: repeat(3,85px);
+}
+#small{
+    background-color: whitesmoke;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+h2{
+    margin: 0;
+}
+.main p{
+    margin:10px 0 0 0;
+    text-indent: 100px;
+}
+#start{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows:50px max-content;
+    gap: 5px;
+}
+.main{
+    border-radius: 10px;
+    background-color: whitesmoke;
+    grid-row: span 2;
+}
+aside{
+    background-color: whitesmoke;
+}
+aside div{
+    text-align: center;
+}
+#foot{
+    margin: 10px 0 0 0;
+    background-color: whitesmoke;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+#foot p{
+    margin: 0;
+}
+#start img{
+    width: 50%;
+}
+
+@media screen and (max-width:625px){
+    #nav_bar{
+        justify-content:center;
+        grid-template-columns:max-content;
+        grid-template-rows:repeat(3,50px);
+    }
+    h1{
+        order:-1;
+    }
+    .first{
+        justify-content:center;
+        grid-template-rows:50px;
+    }
+}
+@media screen and (max-width:399px){
+    #start{
+        grid-template-rows:100px max-content;
+    }
+}
+@media screen and (max-width:300px){
+    #start{
+        grid-template-rows:repeat(3,max-content);
+        grid-template-columns:auto;
+    }
+}
